@@ -1,26 +1,35 @@
 import './index.css'
 import Logo from './../../assets/img/Logo.svg'
 import Wrapper from '../Layouts/Wrapper'
+import { useState } from 'react'
 function Header() {
+  const [show, setShow] = useState(false)
+
+  const handleShow = () => {
+    setShow(prev => !prev)
+  }
   return (
     <header className="Header">
       <Wrapper>
-        <img src={Logo} alt=" Brayan Forero" />
-        <nav className="Header__navigation">
+        <img className="Header__logo" src={Logo} alt=" Brayan Forero" />
+        <nav className={`Header__navigation${show ? ' show' : ''}`}>
           <a href="#" className="Header__link active">
-            Item 1
+            Go 🏠
           </a>
           <a href="#" className="Header__link">
-            Item 2
+            Experience 🏅
           </a>
           <a href="#" className="Header__link">
-            Item 3
+            Me 😉
           </a>
           <a href="#" className="Header__link">
-            Item 4
+            Contact Me 📇
+          </a>
+          <a href="#" className="Header__link">
+            CV 📄
           </a>
         </nav>
-        <button className="Header__toogle">
+        <button onClick={handleShow} className="Header__toogle">
           <i className="bx bx-menu"></i>
         </button>
       </Wrapper>
