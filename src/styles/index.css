@@ -14,13 +14,17 @@ html {
 
 body {
   font-family: var(--body-font);
-  @apply h-screen text-grays-700 bg-grays-100 text-sm md:text-base 2xl:text-xl overflow-hidden 
+  @apply text-grays-700 bg-grays-100 text-sm md:text-base 2xl:text-xl 
 }
 h1{@apply text-5xl}
 h2{@apply text-4xl}
 h3{@apply text-3xl}
 h4{@apply text-xl}
 
+#root {
+
+@apply h-screen overflow-hidden
+}
 
 .wrapper {
   @apply container mx-auto px-2 lg:px-0
