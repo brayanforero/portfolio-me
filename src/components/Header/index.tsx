@@ -14,19 +14,19 @@ function Header() {
         <img className="Header__logo" src={Logo} alt=" Brayan Forero" />
         <nav className={`Header__navigation${show ? ' show' : ''}`}>
           <a href="#" className="Header__link active">
-            Go 🏠
+            🏠 Go
           </a>
           <a href="#" className="Header__link">
-            Experience 🏅
+            🏅 Experience
           </a>
           <a href="#" className="Header__link">
-            Me 😉
+            😉 Me
           </a>
           <a href="#" className="Header__link">
-            Contact Me 📇
+            📇 Contact me
           </a>
           <a href="#" className="Header__link">
-            CV 📄
+            📄 CV
           </a>
         </nav>
         <button onClick={handleShow} className="Header__toogle">
