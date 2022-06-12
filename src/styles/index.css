@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  @apply min-h-screen text-grays-700 bg-grays-100 text-sm md:text-base lg:text-lg
+  @apply h-screen text-grays-700 bg-grays-100 text-sm md:text-base lg:text-lg overflow-hidden 
 }
 h1{@apply text-5xl}
 h2{@apply text-4xl}
@@ -25,6 +25,7 @@ h4{@apply text-xl}
 .wrapper {
   @apply container mx-auto px-2 lg:px-0
 }
+
 h1, h2 ,h3, h4 {
   font-family: var(--title-font);
   font-weight: 700;
