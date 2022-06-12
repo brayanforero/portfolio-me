@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  /* FONTS */
+  --body-font: : -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  --title-font: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  @apply min-h-screen text-grays-600 bg-grays-100
+}
+h1{@apply text-5xl}
+h2{@apply text-4xl}
+h3{@apply text-3xl}
+h4{@apply text-xl}
+
+h1, h2 ,h3, h4 {
+  font-family: var(--title-font);
+  font-weight: 700;
+  @apply text-grays-700
+}
