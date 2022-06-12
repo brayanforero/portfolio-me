@@ -1,0 +1,23 @@
+.Header {
+  --header-height: 3rem;
+  @apply bg-white shadow-sm;
+}
+.Header .wrapper {
+  height: var(--header-height);
+  @apply sticky flex items-center justify-between;
+}
+
+.Header__navigation {
+  top: var(--header-height);
+  width: 50vw;
+  height: calc(100vh - 3rem);
+  @apply absolute right-0 z-10 flex flex-col items-center py-4 rounded-sm lg:static bg-primary-900 lg:block;
+}
+
+.Header__link {
+  @apply p-2 border-b-2 text-grays-300 border-primary-500;
+}
+
+.Header__toogle {
+  @apply flex items-center justify-center p-2 text-xl;
+}
