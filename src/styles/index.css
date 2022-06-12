@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  @apply min-h-screen text-grays-600 bg-grays-100
+  @apply min-h-screen text-grays-700 bg-grays-200 text-sm md:text-base lg:text-lg
 }
 h1{@apply text-5xl}
 h2{@apply text-4xl}
