@@ -1,5 +1,5 @@
 .Me {
-  @apply grid items-center gap-4 py-4 bg-white rounded shadow lg:grid-cols-2;
+  @apply relative grid items-center gap-4 py-4 bg-white rounded shadow lg:grid-cols-2 -z-10;
 }
 
 .Me__image {
