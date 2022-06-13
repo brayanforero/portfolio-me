@@ -1,12 +1,10 @@
 import './index.css'
-
-const IMAGE =
-  'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
+import Image from './../../assets/img/Proflie.png'
 function Me() {
   return (
     <section className="Me">
       <picture className="Me__image">
-        <img src={IMAGE} alt="Man Profile" />
+        <img src={Image} alt="Brayan Forero Profile" />
       </picture>
       <div className="Me__texts">
         <h1 className="Me__name">
