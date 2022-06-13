@@ -1,5 +1,5 @@
 .Me {
-  @apply relative grid items-center gap-4 py-4 bg-white rounded shadow lg:grid-cols-2 -z-10;
+  @apply relative grid items-center gap-4 py-4 bg-white rounded shadow lg:py-8 lg:grid-cols-2 -z-10;
 }
 
 .Me__image {
@@ -34,7 +34,5 @@
 }
 
 .Me__cta button {
-  min-width: 180px;
-  max-width: 180px;
-  @apply p-2 font-bold text-white rounded md:p-3 lg:p-4;
+  @apply p-2 font-bold text-white rounded cursor-pointer md:p-3 min-w-max hover:opacity-90;
 }
