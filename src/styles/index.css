@@ -23,7 +23,7 @@ h4{@apply text-xl}
 
 #root {
 
-@apply h-screen overflow-hidden
+@apply h-screen overflow-x-hidden
 }
 
 .wrapper {
