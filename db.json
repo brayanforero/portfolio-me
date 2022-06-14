@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "title": "Normalize Clone",
+      "description": "Proyecto personal donde desarrolle skills de maquetación web.",
+      "preview": "https://landing-normalize.vercel.app/",
+      "repo": "https://github.com/brayanforero/landing-normalize/",
+      "cover": "https://repository-images.githubusercontent.com/418251932/72b9486a-e13f-4b99-8e6e-317270efb7da"
+    },
+    {
+      "title": "Telegram Static Chat Clone",
+      "description": "Proyecto personal para desarrollar skills sobre el manejo de layouts y posicionamiento.",
+      "preview": "https://telegram-static-chat.vercel.app/",
+      "repo": "https://telegram-static-chat.vercel.app/",
+      "cover": "https://repository-images.githubusercontent.com/451166195/4087b6cc-33ab-4a94-b146-9c55037e5649"
+    }
+  ]
+}

@@ -1,7 +1,9 @@
+import useWorks from '../../hooks/useWorks'
 import './index.css'
 import Work from './Work'
 
 function Xp() {
+  const { loading, works } = useWorks()
   return (
     <section className="Xp">
       <h2 className="mb-5 text-center text-primary-500">Experience</h2>
@@ -20,29 +22,18 @@ function Xp() {
         <h3 className="mb-4 text-xl text-center md:text-2xl opacity-90">
           🗃️ Proyects
         </h3>
+
         <div className="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-4">
-          <Work
-            title="Normalize Clone"
-            description="Proyecto personal donde desarrolle skills de maquetación web."
-            preview="#"
-            repo="#"
-            cover="https://repository-images.githubusercontent.com/418251932/72b9486a-e13f-4b99-8e6e-317270efb7da"
-          />
-          <Work
-            title="Normalize Clone"
-            description="Proyecto personal donde desarrolle skills de maquetación web."
-            preview="#"
-            repo="#"
-            cover="https://repository-images.githubusercontent.com/418251932/72b9486a-e13f-4b99-8e6e-317270efb7da"
-          />
-          <Work
-            title="Normalize Clone"
-            description="Proyecto personal donde desarrolle skills de maquetación web."
-            preview="#"
-            repo="#"
-            cover="https://repository-images.githubusercontent.com/418251932/72b9486a-e13f-4b99-8e6e-317270efb7da"
-          />
+          {works.map(w => (
+            <Work data={w} />
+          ))}
         </div>
+
+        {loading && (
+          <span className="p-2 border-b-2 rounded bg-primary-100 border-primary-500">
+            Loading...
+          </span>
+        )}
       </div>
     </section>
   )
