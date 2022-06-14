@@ -1,0 +1,8 @@
+#root {
+  padding-top: var(--header-height);
+  @apply h-screen overflow-x-hidden;
+}
+
+.wrapper {
+  @apply container mx-auto px-2 lg:px-0;
+}
