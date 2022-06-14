@@ -1,7 +1,6 @@
 .Header {
-  --header-height: 4em;
-  position: sticky;
-  @apply bg-white shadow-sm;
+  position: fixed;
+  @apply bg-white w-full shadow-sm top-0 left-0;
 }
 
 .Header .wrapper {
