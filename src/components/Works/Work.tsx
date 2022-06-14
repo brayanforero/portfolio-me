@@ -2,18 +2,20 @@ import { Work as Model } from '../../types/models/core'
 
 interface Props {
   data: Model
-  actionable?: boolean
 }
-function Work({ data, actionable = true }: Props) {
+function Work({ data }: Props) {
   return (
     <article className="Xp__work">
-      <picture className="h-2/4 max-h-52 lg:max-h-60">
-        <img src={data.cover} alt={`Brayan Forero ${data.title}`} />
-      </picture>
+      <img
+        className="block object-cover w-full m-0 h-1/3 max-h-48"
+        src={data.cover}
+        alt={`Brayan Forero ${data.title}`}
+      />
+
       <div className="px-4 py-5">
         <h4 className="mb-4 text-grays-600">{data.title}</h4>
         <p className="mb-4">{data.description}</p>
-        {actionable && (
+        {data.repo && data.preview && (
           <div className="flex flex-col gap-2 md:flex-row">
             <a
               href={data.preview}

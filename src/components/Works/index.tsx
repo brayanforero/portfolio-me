@@ -23,7 +23,7 @@ function Xp() {
           🗃️ Proyects
         </h3>
 
-        <div className="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-3">
           {works.map(w => (
             <Work data={w} />
           ))}

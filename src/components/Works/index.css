@@ -4,17 +4,17 @@
 
 .Xp__skills,
 .Xp_works {
-  @apply pt-5 mb-5 px-5 lg:px-36;
+  @apply px-5 pt-5 mb-5 lg:px-36;
 }
 
 .Xp__skill {
-  @apply p-4 rounded  text-center bg-primary-100 border-b-4 border-primary-500 w-full h-max font-bold;
+  @apply w-full p-4 font-bold text-center border-b-4 rounded bg-primary-100 border-primary-500 h-max;
 }
 
 .Xp__work {
-  @apply border-2 border-grays-400 rounded;
+  @apply overflow-hidden border-2 rounded border-grays-400;
 }
 
 .Xp__work {
-  @apply border-2 border-grays-400 rounded;
+  @apply border-2 rounded border-grays-400;
 }
