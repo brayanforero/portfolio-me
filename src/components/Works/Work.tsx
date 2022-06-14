@@ -18,14 +18,14 @@ function Work({ data, actionable = true }: Props) {
             <a
               href={data.preview}
               target="_blank"
-              className="px-3 py-2 font-bold rounded bg-primary-500 text-grays-100 "
+              className="px-3 py-2 font-bold text-center rounded bg-primary-500 text-grays-100"
             >
               🌎 Demo
             </a>
             <a
               href={data.repo}
               target="_blank"
-              className="px-3 py-2 font-bold rounded bg-grays-700 text-grays-100 "
+              className="px-3 py-2 font-bold text-center rounded bg-grays-700 text-grays-100"
             >
               🧰 Repo
             </a>
