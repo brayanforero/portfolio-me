@@ -1,0 +1,20 @@
+.Xp {
+  @apply relative py-8 bg-white rounded shadow lg:py-8;
+}
+
+.Xp__skills,
+.Xp_works {
+  @apply pt-5 mb-5 px-5 lg:px-36;
+}
+
+.Xp__skill {
+  @apply p-4 rounded  text-center bg-primary-100 border-b-4 border-primary-500 w-full h-max font-bold;
+}
+
+.Xp__work {
+  @apply border-2 border-grays-400 rounded;
+}
+
+.Xp__work {
+  @apply border-2 border-grays-400 rounded;
+}
