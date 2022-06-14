@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  @apply text-grays-700 bg-grays-100 text-sm md:text-base 2xl:text-xl;
+  @apply text-grays-600 bg-grays-100 text-sm md:text-base 2xl:text-xl;
 }
 h1 {
   @apply text-5xl;
