@@ -1,6 +1,6 @@
 .Header {
   position: fixed;
-  @apply bg-white w-full shadow-sm top-0 left-0;
+  @apply bg-white w-full shadow-sm top-0 left-0 z-40;
 }
 
 .Header .wrapper {
