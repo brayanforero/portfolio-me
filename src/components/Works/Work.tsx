@@ -28,14 +28,14 @@ function Work({
             <a
               href={preview}
               target="_blank"
-              className="p-3 font-bold rounded bg-primary-500 lg:p-4 text-grays-100 "
+              className="px-3 py-2 font-bold rounded bg-primary-500 text-grays-100 "
             >
               🌎 Demo
             </a>
             <a
               href={repo}
               target="_blank"
-              className="p-3 font-bold rounded bg-grays-700 text-grays-100 lg:p-3"
+              className="px-3 py-2 font-bold rounded bg-grays-700 text-grays-100 "
             >
               🧰 Repo
             </a>
