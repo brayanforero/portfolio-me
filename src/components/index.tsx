@@ -1,6 +1,7 @@
+import Contact from './Contact'
 import Header from './Header'
-import Wrapper from './Layouts/Wrapper'
 import Me from './Me'
+import Wrapper from './Layouts/Wrapper'
 import Xp from './Works'
 
-export { Header, Wrapper, Me, Xp }
+export { Header, Wrapper, Me, Xp, Contact }

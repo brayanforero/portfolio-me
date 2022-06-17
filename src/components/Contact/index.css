@@ -1,0 +1,26 @@
+.Contact {
+  @apply relative py-8 mb-5 bg-white rounded shadow;
+}
+
+.Contact__social {
+  @apply flex items-center justify-center w-32 h-32 gap-2 p-5 text-4xl font-bold rounded shadow opacity-100 cursor-default lg:cursor-pointer lg:w-36 lg:h-36 bg-grays-300 hover:opacity-90;
+}
+.Contact__social--whatsapp {
+  background-color: hsl(142, 70%, 49%);
+  @apply text-grays-100;
+}
+
+.Contact__social--linkedin {
+  background-color: hsl(199, 85%, 36%);
+  @apply text-grays-100;
+}
+
+.Contact__social--messenger {
+  background: #00b2ff;
+  background: linear-gradient(to bottom, #00b2ff 0%, #006aff 100%);
+  @apply text-grays-100;
+}
+
+.Contact__social--github {
+  @apply text-grays-100 bg-grays-700;
+}

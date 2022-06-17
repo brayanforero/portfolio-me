@@ -1,5 +1,5 @@
 .Xp {
-  @apply relative py-8 bg-white rounded shadow lg:py-8;
+  @apply relative py-8 mb-4 bg-white rounded shadow;
 }
 
 .Xp__skills,

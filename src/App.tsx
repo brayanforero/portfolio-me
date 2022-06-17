@@ -1,5 +1,5 @@
 import './styles/App.css'
-import { Header, Me, Wrapper, Xp } from './components'
+import { Contact, Header, Me, Wrapper, Xp } from './components'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Wrapper>
           <Me />
           <Xp />
+          <Contact />
         </Wrapper>
       </main>
     </>
