@@ -2,6 +2,7 @@ import './index.css'
 import Logo from './../../assets/img/Logo.svg'
 import Wrapper from '../Layouts/Wrapper'
 import { useState } from 'react'
+import CV from './../../assets/CV/BrayanForero.CV.pdf'
 function Header() {
   const [show, setShow] = useState(false)
 
@@ -25,7 +26,7 @@ function Header() {
           <a href="#" className="Header__link">
             📇 Contact me
           </a>
-          <a href="#" className="Header__link">
+          <a href={CV} download className="Header__link">
             📄 CV
           </a>
         </nav>
