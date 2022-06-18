@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { Contact, Me, NavSkeleton, Wrapper, Xp } from './components'
+import { Contact, End, Me, NavSkeleton, Wrapper, Xp } from './components'
 import './styles/App.css'
 
 const Header = lazy(() => import('./components/Header'))
@@ -17,6 +17,7 @@ function App() {
           <Contact />
         </Wrapper>
       </main>
+      <End />
     </>
   )
 }
