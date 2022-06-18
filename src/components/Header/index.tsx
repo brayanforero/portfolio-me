@@ -4,28 +4,29 @@ import Wrapper from '../Layouts/Wrapper'
 import { useState } from 'react'
 import CV from './../../assets/CV/BrayanForero.CV.pdf'
 import useScrollMove from '../../hooks/useScrollMove'
+
 function Header() {
   const [show, setShow] = useState(false)
-  const { move } = useScrollMove()
+  const { move } = useScrollMove(setShow)
   const handleShow = () => {
     setShow(prev => !prev)
   }
 
   return (
-    <header className="Header">
+    <header id="go" className="Header">
       <Wrapper>
         <img className="Header__logo" src={Logo} alt=" Brayan Forero" />
         <nav className={`Header__navigation${show ? ' show' : ''}`}>
-          <a onClick={move} href="#go" className="Header__link active">
+          <a href="#go" id="go-section" onClick={move} className="Header__link">
             🏠 Go
           </a>
-          <a onClick={move} href="" data-section="xp" className="Header__link">
+          <a href="#xp" id="xp-section" onClick={move} className="Header__link">
             🏅 Experience
           </a>
           <a
+            href="#findMe"
             onClick={move}
-            href=""
-            data-section="findMe"
+            id="findMe-section"
             className="Header__link"
           >
             📇 Find me
