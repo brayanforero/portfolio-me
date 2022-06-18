@@ -1,5 +1,6 @@
 #root {
   padding-top: var(--header-height);
+  scroll-behavior: smooth;
   @apply h-screen overflow-x-hidden;
 }
 
