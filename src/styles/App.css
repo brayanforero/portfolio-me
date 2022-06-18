@@ -4,5 +4,19 @@
 }
 
 .wrapper {
-  @apply container mx-auto px-2 lg:px-0;
+  @apply container px-2 mx-auto lg:px-0;
+}
+.skeleton {
+  animation: skeleton 1.5s alternate infinite;
+  @apply block bg-grays-300;
+}
+
+@keyframes skeleton {
+  from {
+    @apply bg-grays-200;
+  }
+
+  to {
+    @apply bg-grays-400;
+  }
 }
