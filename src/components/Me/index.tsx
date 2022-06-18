@@ -17,8 +17,12 @@ function Me() {
         </p>
       </div>
       <div className="Me__cta">
-        <button className="bg-primary-600">My Projects 💻</button>
-        <button className="bg-primary-700">let's work together! 🤝</button>
+        <a href="#xp" className="bg-primary-600">
+          My Projects 💻
+        </a>
+        <a href="#findMe" className="bg-primary-700">
+          let's work together! 🤝
+        </a>
       </div>
     </section>
   )
