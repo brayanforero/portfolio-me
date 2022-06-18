@@ -5,7 +5,7 @@ import Work from './Work'
 function Xp() {
   const { loading, works } = useWorks()
   return (
-    <section className="Xp">
+    <section id="xp" className="Xp">
       <h2 className="mb-5 text-center text-primary-500">Experience</h2>
       <div className="Xp__skills">
         <h3 className="mb-4 text-xl text-center md:text-2xl opacity-90">

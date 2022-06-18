@@ -2,7 +2,7 @@ import './index.css'
 import Social from './Social'
 function Contact() {
   return (
-    <section className="Contact">
+    <section id="findMe" className="Contact">
       <h2 className="mb-5 text-center text-primary-500">Find Me!</h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Social url="https://wa.me/584160353742" name="whatsapp">
