@@ -12,9 +12,9 @@ function Xp() {
           ⚡ Skills
         </h3>
         <div className="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2">
-          <span className="Xp__skill">HTML</span>
-          <span className="Xp__skill">CSS</span>
-          <span className="Xp__skill">Javascript - Typescript</span>
+          <span className="Xp__skill">HTML - CSS</span>
+          <span className="Xp__skill">React</span>
+          <span className="Xp__skill">Angular</span>
           <span className="Xp__skill">Office 365</span>
         </div>
       </div>
