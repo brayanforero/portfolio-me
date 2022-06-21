@@ -1,7 +1,7 @@
 export interface Work {
   title: string
   description: string
-  preview: string
-  repo: string
+  preview: string | null
+  repo: string | null
   cover: string
 }
