@@ -1,9 +1,19 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Contact, End, Me, NavSkeleton, Wrapper, Xp } from './components'
 import './styles/App.css'
 
 const Header = lazy(() => import('./components/Header'))
 function App() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      localStorage.removeItem('projects')
+    }, 1000 * 3600)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+
   return (
     <>
       <Suspense fallback={<NavSkeleton />}>
