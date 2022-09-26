@@ -1,6 +1,6 @@
 import { Work } from '../types/models/core'
 import { ProjectsReponse } from '../types/response'
-const URL_API = 'https://api-porftfolio.up.railway.app/projects'
+const URL_API = 'https://api-brayanforero.onrender.com/projects'
 export const getWorks = async (): Promise<Work[]> => {
   const localProjects = localStorage.getItem('projects')
 
