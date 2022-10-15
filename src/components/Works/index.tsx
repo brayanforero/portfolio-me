@@ -15,7 +15,10 @@ function Xp() {
           <span className="Xp__skill">HTML - CSS</span>
           <span className="Xp__skill">React</span>
           <span className="Xp__skill">Angular</span>
-          <span className="Xp__skill">Office 365</span>
+          <span className="Xp__skill">Node</span>
+          <span className="Xp__skill">Database</span>
+          <span className="Xp__skill">Power Automate - Flow (office 365)</span>
+          <span className="Xp__skill">Power Apps(office 365)</span>
         </div>
       </div>
       <div className="Xp_works">
