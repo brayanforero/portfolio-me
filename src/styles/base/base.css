@@ -1,0 +1,56 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    /* OTHER */
+    --header-height: 4em;
+  }
+
+  body {
+    @apply text-sm font-poppins text-grays-600 bg-grays-100 md:text-base 2xl:text-xl;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-grays-700;
+  }
+
+  h1 {
+    @apply text-7xl;
+  }
+  h2 {
+    @apply text-[4rem];
+  }
+  h3 {
+    @apply text-5xl;
+  }
+  h4 {
+    @apply text-[2rem];
+  }
+
+  img,
+  picture,
+  video,
+  iframe,
+  figure {
+    /* opcional */
+    /* -o-object-fit: cover;
+     object-fit: cover; */
+    /* opcional */
+    /* -o-object-position: center center;
+     object-position: center center; */
+    @apply block w-full max-w-full;
+  }
+
+  svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+  }
+}

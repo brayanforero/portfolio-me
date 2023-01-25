@@ -11,13 +11,3 @@
   animation: skeleton 1.5s alternate infinite;
   @apply block bg-grays-300;
 }
-
-@keyframes skeleton {
-  from {
-    @apply bg-grays-200;
-  }
-
-  to {
-    @apply bg-grays-400;
-  }
-}

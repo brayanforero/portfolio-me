@@ -1,18 +1,17 @@
-import { lazy, Suspense, useEffect } from 'react'
-import { Contact, End, Me, NavSkeleton, Wrapper, Xp } from './components'
-import './styles/App.css'
+import { lazy, Suspense, useEffect } from "react";
+import { Contact, End, Me, NavSkeleton, Wrapper, Xp } from "./components";
 
-const Header = lazy(() => import('./components/Header'))
+const Header = lazy(() => import("./components/Header"));
 function App() {
   useEffect(() => {
     const interval = setInterval(() => {
-      localStorage.removeItem('projects')
-    }, 1000 * 3600)
+      localStorage.removeItem("projects");
+    }, 1000 * 3600);
 
     return () => {
-      clearInterval(interval)
-    }
-  }, [])
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <>
@@ -29,7 +28,7 @@ function App() {
       </main>
       <End />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
