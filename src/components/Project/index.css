@@ -1,5 +1,5 @@
 .Project {
-  @apply overflow-hidden rounded-3xl bg-black-alt;
+  @apply relative overflow-hidden rounded-3xl bg-black-alt;
 }
 
 .Project-picture {
@@ -20,4 +20,8 @@
 
 .Project-p {
   @apply text-base lg:text-2xl opacity-90;
+}
+
+.Project-star {
+  @apply absolute text-2xl text-transparent lg:text-4xl bottom-4 right-4 bg-clip-text bg-gradient-to-b from-blue-alt to-blue;
 }

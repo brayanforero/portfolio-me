@@ -5,6 +5,7 @@ const img =
 function Project() {
   return (
     <article className="Project">
+      <i className="bx bxs-star Project-star"></i>
       <picture className="Project-picture ">
         <img className="Project-img " src={img} alt="Picture" />
       </picture>

@@ -9,6 +9,8 @@ module.exports = {
       "white-alt": "#F0F2F5",
       black: "#161513",
       "black-alt": "#1C1C22",
+      blue: "#005bea",
+      "blue-alt": "#00c6fb",
     },
     fontFamily: {
       poppins: ["'Poppins'", "sans-serif"],
