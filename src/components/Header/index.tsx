@@ -18,7 +18,7 @@ function Header() {
               <a href="#">CV/Resume</a>
             </li>
           </ul>
-          <button>Let's talk</button>
+          <button className="button-white Header-button">Let's talk</button>
         </nav>
       </Wrapper>
     </header>

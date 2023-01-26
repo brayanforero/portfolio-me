@@ -1,0 +1,9 @@
+@layer components {
+  [class^="button"] {
+    @apply px-5 py-2 font-semibold uppercase rounded-3xl;
+  }
+
+  .button-white {
+    @apply bg-white-alt text-black-alt;
+  }
+}
