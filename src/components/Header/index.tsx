@@ -9,6 +9,9 @@ function Header() {
         <nav className="Header-nav">
           <ul className="Header-ul">
             <li className="Header-li">
+              <a href="#">Home</a>
+            </li>
+            <li className="Header-li">
               <a href="#">Projects</a>
             </li>
             <li className="Header-li">
