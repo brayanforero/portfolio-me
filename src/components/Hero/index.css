@@ -1,0 +1,24 @@
+.Hero {
+  min-height: calc(100vh - var(--header-height));
+  @apply flex flex-col items-center gap-4 pt-24;
+}
+
+.Hero-picture {
+  @apply self-center overflow-hidden rounded-full w-52 h-52 bg-white-alt;
+}
+
+.Hero-texts {
+  @apply text-center;
+}
+
+.Hero-name {
+  line-height: 1.25;
+}
+
+.Hero-p {
+  @apply self-center max-w-4xl mx-auto;
+}
+
+.Hero-cta {
+  @apply flex flex-col gap-2 md:flex-row md:gap-4;
+}

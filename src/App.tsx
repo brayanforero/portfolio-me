@@ -1,17 +1,14 @@
-import { Header } from "./components";
+import { Header, Hero, Wrapper } from "./components";
 
 function App() {
   return (
     <>
       <Header />
-      {/* <main className="py-4 lg:py-5">
+      <main>
         <Wrapper>
-          <Me />
-          <Xp />
-          <Contact />
+          <Hero />
         </Wrapper>
       </main>
-      <End /> */}
     </>
   );
 }
