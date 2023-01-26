@@ -10,7 +10,7 @@
 }
 
 .Header-nav {
-  @apply flex flex-col lg:flex-row lg:flex-[4] lg:pl-16 lg:justify-between lg:items-center;
+  @apply flex flex-col lg:flex-row gap-3 lg:gap-0  lg:flex-[4] lg:pl-20  lg:justify-between lg:items-center;
 }
 
 .Header-ul {
