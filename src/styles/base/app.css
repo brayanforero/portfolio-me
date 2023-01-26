@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  @apply container px-2 mx-0 lg:px-0 lg:mx-auto;
+  @apply container px-2 mx-0 md:px-0 md:mx-auto;
 }
 .skeleton {
   animation: skeleton 1.5s alternate infinite;

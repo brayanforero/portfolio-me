@@ -1,0 +1,23 @@
+.Project {
+  @apply overflow-hidden rounded-3xl bg-black-alt;
+}
+
+.Project-picture {
+  @apply h-60 lg:h-[80] bg-white;
+}
+
+.Project-img {
+  @apply object-cover h-full;
+}
+
+.Project-content {
+  @apply px-2 py-4 lg:py-8 lg:px-4;
+}
+
+.Project-h3 {
+  @apply text-2xl lg:text-3xl;
+}
+
+.Project-p {
+  @apply text-base lg:text-2xl opacity-90;
+}

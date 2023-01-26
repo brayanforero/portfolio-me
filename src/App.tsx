@@ -1,4 +1,4 @@
-import { Header, Hero, Wrapper } from "./components";
+import { FavoriteWorks, Header, Hero, Wrapper } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <main>
         <Wrapper>
           <Hero />
+          <FavoriteWorks />
         </Wrapper>
       </main>
     </>

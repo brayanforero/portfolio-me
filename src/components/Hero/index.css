@@ -1,6 +1,6 @@
 .Hero {
   min-height: calc(100vh - var(--header-height));
-  @apply flex flex-col items-center gap-4 pt-24;
+  @apply flex flex-col items-center gap-4 pt-16;
 }
 
 .Hero-picture {
