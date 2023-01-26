@@ -1,3 +1,4 @@
+import { assets } from "@/utils";
 import Wrapper from "../Layouts/Wrapper";
 import "./index.css";
 
@@ -18,7 +19,9 @@ function Header() {
               <a href="#">About me</a>
             </li>
             <li className="Header-li">
-              <a href="#">CV/Resume</a>
+              <a download={true} href={assets("assets/CV/BrayanForero.CV.pdf")}>
+                CV/Resume
+              </a>
             </li>
           </ul>
           <button className="button-white Header-button">Let's talk</button>
