@@ -1,54 +1,20 @@
 .Header {
-  position: fixed;
-  @apply bg-white w-full shadow-sm top-0 left-0 z-40;
+  @apply h-auto py-2 lg:py-5 lg:h-20;
 }
 
 .Header .wrapper {
-  height: var(--header-height);
-  @apply flex items-center justify-between;
+  @apply flex flex-col h-full gap-3 lg:gap-0 lg:flex-row lg:justify-between lg:items-center;
+}
+.Header-logo {
+  @apply text-2xl text-center lg:text-left;
 }
 
-.Header__logo {
-  max-width: 220px;
-  @apply w-1/3;
+.Header-nav {
+  @apply flex flex-col lg:flex-row lg:flex-[4] lg:pl-16 lg:justify-between lg:items-center;
 }
 
-.Header__navigation {
-  position: absolute;
-  top: var(--header-height);
-  right: 0;
-  width: 75vw;
-  height: calc(100vh - var(--header-height));
-  transform: translateX(100%);
-  @apply z-10 flex flex-col items-center gap-4 py-4 transition-transform rounded-sm lg:z-0 lg:justify-around lg:flex-row lg:py-0 bg-primary-900 lg:bg-transparent lg:static;
+.Header-ul {
+  @apply flex justify-center gap-4 lg:justify-between;
 }
-
-@media screen and (min-width: 1024px) {
-  .Header__navigation {
-    height: var(--header-height);
-    width: auto;
-    transform: translateX(0);
-  }
-}
-
-.Header__navigation.show {
-  transform: translateX(0);
-}
-
-.Header__link {
-  @apply flex items-center justify-center p-2 font-semibold transition-all border-b-4 border-transparent lg:p-1 text-grays-300 lg:text-grays-700 lg:opacity-80 lg:hover:opacity-100 lg:hover:border-primary-600;
-}
-
-.Header__link.active {
-  opacity: 1;
-  @apply border-primary-600;
-}
-
-.Header__toogle {
-  @apply flex items-center justify-center p-2 text-3xl font-bold lg:hidden;
-}
-
-.Header__navigation :last-child {
-  min-width: 80px;
-  @apply border-transparent rounded bg-danger-600 text-grays-100;
+.Header-li {
 }

@@ -1,4 +1,4 @@
-.Me {
+/* .Me {
   @apply relative grid items-center gap-4 py-5 mb-4 bg-white rounded shadow lg:py-8 lg:grid-cols-2;
 }
 
@@ -35,4 +35,4 @@
 
 .Me__cta a {
   @apply inline-block p-2 font-bold text-white rounded cursor-pointer md:p-3 min-w-max hover:opacity-90;
-}
+} */

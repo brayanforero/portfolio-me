@@ -1,13 +1,11 @@
 #root {
-  padding-top: var(--header-height);
-  scroll-behavior: smooth;
   @apply h-screen overflow-x-hidden;
 }
 
 .wrapper {
-  @apply container px-2 mx-auto lg:px-0;
+  @apply container px-2 mx-0 lg:px-0 lg:mx-auto;
 }
 .skeleton {
   animation: skeleton 1.5s alternate infinite;
-  @apply block bg-grays-300;
+  @apply block;
 }
