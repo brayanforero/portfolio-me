@@ -3,6 +3,14 @@
     @apply px-5 py-2 font-semibold uppercase rounded-3xl;
   }
 
+  [class^="button"].big {
+    @apply px-8 py-3 font-semibold uppercase rounded-3xl;
+  }
+
+  [class^="button"].ghost {
+    @apply text-white bg-transparent border-white-alt border-[1px] transition-all hover:bg-white-alt hover:text-black-alt;
+  }
+
   .button-white {
     @apply bg-white-alt text-black-alt;
   }
