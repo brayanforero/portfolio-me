@@ -3,6 +3,21 @@
     scroll-behavior: smooth;
   }
 
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: rgb(0, 198, 251);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 198, 251, 1) 0%,
+      rgba(0, 91, 234, 1) 100%
+    );
+  }
+
   :root {
     /* OTHER */
     --header-height: 80px;
