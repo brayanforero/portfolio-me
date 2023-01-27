@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': 18.0.10
   '@vitejs/plugin-react': 3.0.1
   autoprefixer: 10.4.13
+  just-debounce-it: 3.2.0
   postcss: 8.4.21
   postcss-import: 15.1.0
   react: 18.2.0
@@ -15,6 +16,7 @@ specifiers:
   vite: 4.0.4
 
 dependencies:
+  just-debounce-it: 3.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -894,6 +896,10 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
     dev: true
+
+  /just-debounce-it/3.2.0:
+    resolution: {integrity: sha512-WXzwLL0745uNuedrCsCs3rpmfD6DBaf7uuVwaq98/8dafURfgQaBsSpjiPp5+CW6Vjltwy9cOGI6qE71b3T8iQ==}
+    dev: false
 
   /lilconfig/2.0.6:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
