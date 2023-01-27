@@ -1,15 +1,16 @@
 import { assets } from "@/utils";
 import "./index.css";
+const Img = assets("img/Profile.png");
 
 function Hero() {
   return (
     <section className="Hero">
       <picture className="Hero-picture">
-        <img src={assets("img/Profile.png")} alt="Brayan Forero" />
+        <img src={Img} alt="Brayan Forero" />
       </picture>
       <div className="Hero-texts">
         <h2 className="Hero-name">
-          <span className="Hero-span">Hello, I'am Brayan Forero </span>
+          <span className="Hero-span">Hello, I'm Brayan Forero </span>
           Fronted Web Developer.
         </h2>
         <p className="Hero-p">

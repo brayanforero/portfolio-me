@@ -1,6 +1,7 @@
 import { assets } from "@/utils";
 import Wrapper from "../Layouts/Wrapper";
 import "./index.css";
+const CV = assets("assets/CV/BrayanForero.CV.pdf");
 
 function Header() {
   return (
@@ -19,7 +20,7 @@ function Header() {
               <a href="#">About me</a>
             </li>
             <li className="Header-li">
-              <a download={true} href={assets("assets/CV/BrayanForero.CV.pdf")}>
+              <a download={true} href={CV}>
                 CV/Resume
               </a>
             </li>
