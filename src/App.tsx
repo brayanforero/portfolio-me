@@ -1,4 +1,4 @@
-import { FavoriteWorks, Header, Hero, Wrapper } from "./components";
+import { FavoriteWorks, Header, Hero, Wrapper, AboutMe } from "./components";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
           <Hero />
           <FavoriteWorks />
         </Wrapper>
+        <AboutMe />
       </main>
     </>
   );

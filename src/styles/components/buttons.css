@@ -14,4 +14,12 @@
   .button-white {
     @apply bg-white-alt text-black-alt;
   }
+
+  .button-primary {
+    @apply transition-all bg-gradient-to-r from-blue-alt to-blue;
+  }
+
+  .button-primary:hover {
+    @apply from-blue to-blue-alt;
+  }
 }

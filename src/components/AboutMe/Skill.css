@@ -1,0 +1,21 @@
+.Skill {
+  @apply relative flex items-center justify-between px-8 py-16 transition-all border-t-2 border-white hover:bg-gradient-to-r from-blue-alt to-blue;
+}
+
+.Skill:hover .Skill-img {
+  @apply opacity-100;
+}
+
+.Skill-name {
+  @apply text-2xl lg:text-[4rem];
+}
+
+.Skill-arrow {
+  @apply text-3xl rotate-45 lg:text-6xl;
+}
+
+.Skill-img {
+  transition: opacity 0.3s ease;
+  transition-delay: 100ms;
+  @apply opacity-0 absolute pointer-events-none right-20 lg:right-32  block w-48 lg:w-[180px] h-52 lg:h-[260px] bg-blue rounded-3xl object-cover z-10;
+}

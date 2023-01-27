@@ -1,0 +1,15 @@
+.AboutMe {
+  @apply bg-black-alt;
+}
+
+.AboutMe .wrapper {
+  @apply min-h-screen pt-24;
+}
+
+.AboutMe-cta {
+  @apply flex flex-col mb-8 lg:items-center lg:flex-row lg:gap-5;
+}
+
+.AboutMe-h2 {
+  @apply mb-16 text-center lg:mb-0 lg:text-left;
+}

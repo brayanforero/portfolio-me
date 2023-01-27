@@ -9,3 +9,7 @@
   animation: skeleton 1.5s alternate infinite;
   @apply block;
 }
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-alt to-blue;
+}

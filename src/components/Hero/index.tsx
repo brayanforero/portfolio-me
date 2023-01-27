@@ -10,7 +10,7 @@ function Hero() {
       </picture>
       <div className="Hero-texts">
         <h2 className="Hero-name">
-          <span className="Hero-span">Hello, I'm Brayan Forero </span>
+          <span className="text-gradient">Hello, I'm Brayan Forero </span>
           Fronted Web Developer.
         </h2>
         <p className="Hero-p">
