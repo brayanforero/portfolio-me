@@ -6,7 +6,7 @@ function FavoriteWorks() {
     <section className="FavoriteWorks">
       <div className="flex flex-col gap-8 mb-8 lg:flex-row">
         <h2 className="FavoriteWorks-h2">
-          Look my <span className="text-gradient">Projects.</span>
+          Proj<span className="text-gradient">ects.</span>
         </h2>
         <p className="FavoriteWorks-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magnam

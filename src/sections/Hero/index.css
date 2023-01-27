@@ -1,6 +1,6 @@
 .Hero {
   min-height: calc(100vh - var(--header-height));
-  @apply flex flex-col items-center gap-4 pt-16;
+  @apply flex flex-col items-center gap-4 pt-16 xl:pt-24;
 }
 
 .Hero-picture {
@@ -13,10 +13,11 @@
 
 .Hero-name {
   line-height: 1.25;
+  @apply mb-5 text-4xl text-7xl;
 }
 
 .Hero-p {
-  @apply self-center max-w-4xl mx-auto;
+  @apply self-center max-w-4xl mx-auto lg:text-xl xl:text-2xl;
 }
 
 .Hero-cta {

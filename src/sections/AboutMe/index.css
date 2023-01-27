@@ -11,5 +11,5 @@
 }
 
 .AboutMe-h2 {
-  @apply mb-16 text-center lg:mb-0 lg:text-left;
+  @apply mb-12 lg:mb-16 text-center lg:mb-0 lg:text-left text-4xl lg:text-[4rem] xl:text-6xl;
 }

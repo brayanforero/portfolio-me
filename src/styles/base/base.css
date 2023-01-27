@@ -24,7 +24,7 @@
   }
 
   body {
-    @apply text-sm text-base text-white bg-black font-poppins;
+    @apply text-sm text-white bg-black lg:text-base font-poppins;
   }
 
   h1,

@@ -9,7 +9,7 @@ function AboutMe() {
           <h2 className="AboutMe-h2">
             About <span className="text-gradient">Me</span>
           </h2>
-          <div className="flex justify-center gap-5 lg:justify-start lg:pl-16">
+          <div className="flex flex-col justify-center gap-5 md:flex-row lg:justify-start lg:pl-16">
             <button className="button-primary big">Get in touch</button>
             <button className="button-white big ghost">View all works</button>
           </div>

@@ -3,5 +3,5 @@
 }
 
 .FavoriteWorks-h2 {
-  @apply mb-0 lg:mb-8 text-6xl lg:text-[4rem];
+  @apply mb-0 lg:mb-8 text-4xl lg:text-[4rem] xl:text-6xl;
 }
