@@ -1,5 +1,5 @@
+import { ProjectList } from "@/components";
 import "./index.css";
-import Projects from "./Projects";
 
 function FavoriteWorks() {
   return (
@@ -13,7 +13,7 @@ function FavoriteWorks() {
           alias blanditiis debitis facilis maxime sit at quasi commodi saepe!
         </p>
       </div>
-      <Projects />
+      <ProjectList />
     </section>
   );
 }

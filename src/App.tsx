@@ -1,4 +1,5 @@
-import { FavoriteWorks, Header, Hero, Wrapper, AboutMe } from "./components";
+import { Wrapper } from "./components";
+import { Header, Hero, FavoriteWorks, AboutMe } from "./sections";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import Skill from "./Skill";
+import Skill from "../Skill";
 
-function Skills() {
+function SkillList() {
   const items = useRef([1, 2, 3, 4]);
   return (
     <div>
@@ -12,4 +12,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillList;

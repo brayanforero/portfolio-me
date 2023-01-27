@@ -1,6 +1,6 @@
-import Wrapper from "../Layouts/Wrapper";
+import { SkillsList, Wrapper } from "@/components";
 import "./index.css";
-import Skills from "./Skills";
+
 function AboutMe() {
   return (
     <section className="AboutMe">
@@ -19,7 +19,7 @@ function AboutMe() {
           nulla voluptatum soluta magnam debitis odio, cum aut ipsa explicabo.
         </p>
 
-        <Skills />
+        <SkillsList />
       </Wrapper>
     </section>
   );

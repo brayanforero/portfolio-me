@@ -1,4 +1,4 @@
-import "./Skill.css";
+import "./index.css";
 const cover =
   "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg";
 function Skill({ name = "Lorem Ipsum" }: { name?: string }) {

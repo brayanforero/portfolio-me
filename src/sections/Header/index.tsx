@@ -1,5 +1,6 @@
+import { Wrapper } from "@/components";
 import { assets } from "@/utils";
-import Wrapper from "../Layouts/Wrapper";
+
 import "./index.css";
 const CV = assets("assets/CV/BrayanForero.CV.pdf");
 
