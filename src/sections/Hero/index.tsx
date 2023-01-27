@@ -13,11 +13,7 @@ function Hero() {
           <span className="text-gradient">Hello, I'm Brayan Forero </span>
           Fronted Web Developer.
         </h2>
-        <p className="Hero-p">
-          Frontend Web Developer, with 2 years of experience in web technology
-          services. I am passionate about technology and quite like react to
-          build UI.
-        </p>
+        <p className="Hero-p">JS/TS ⚪ REACT ⚪ TAILWIND CSS</p>
       </div>
       <div className="Hero-cta">
         <button className="button-white big">Get in Touch</button>

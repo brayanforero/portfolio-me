@@ -1,12 +1,15 @@
-import { useRef } from "react";
+import { AppContext } from "@/context";
+import { useContext, useRef } from "react";
 import Skill from "../Skill";
 
 function SkillList() {
-  const items = useRef([1, 2, 3, 4]);
+  const {
+    state: { skills },
+  } = useContext(AppContext);
   return (
     <div>
-      {items.current.map((i) => (
-        <Skill key={i} />
+      {skills.map((s) => (
+        <Skill {...s} key={s.name} />
       ))}
     </div>
   );

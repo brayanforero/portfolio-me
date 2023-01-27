@@ -21,5 +21,5 @@
 .Skill-img {
   transition: opacity 0.5s ease;
   transition-delay: 0.25s;
-  @apply absolute z-10 block object-cover w-40 h-48 opacity-0 pointer-events-none lg:w-48 lg:h-56 md:right-16 bg-blue rounded-3xl;
+  @apply absolute z-10 block object-cover w-40 h-48 bg-white opacity-0 pointer-events-none lg:w-48 lg:h-56 md:right-16 rounded-3xl;
 }

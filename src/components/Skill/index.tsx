@@ -1,9 +1,9 @@
 import { AppContext } from "@/context";
+import { Skill as SkillValue } from "@/types";
 import { useContext } from "react";
 import "./index.css";
-const cover =
-  "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg";
-function Skill({ name = "Lorem Ipsum" }: { name?: string }) {
+
+function Skill({ name = "Lorem Ipsum", icon }: SkillValue) {
   const {
     state: { screenSize },
   } = useContext(AppContext);
@@ -11,9 +11,7 @@ function Skill({ name = "Lorem Ipsum" }: { name?: string }) {
     <article className="Skill">
       <h2 className="Skill-name">{name}</h2>
       <i className="bx bx-up-arrow-alt Skill-arrow"></i>
-      {screenSize >= 768 && (
-        <img className="Skill-img" src={cover} alt={name} />
-      )}
+      {screenSize >= 768 && <img className="Skill-img" src={icon} alt={name} />}
     </article>
   );
 }

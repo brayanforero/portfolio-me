@@ -14,11 +14,20 @@ function AboutMe() {
             <button className="button-white big ghost">View all works</button>
           </div>
         </div>
-        <p className="mb-16 text-center lg:text-left lg:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni
-          nulla voluptatum soluta magnam debitis odio, cum aut ipsa explicabo.
+        <p className="mb-8 text-center lg:text-left lg:text-lg">
+          ✔ Hi! my name is Brayan and I am a web developer.
         </p>
-
+        <p className="mb-8 text-center lg:text-left lg:text-lg">
+          ✔ During my 2 years of experience in the technology, I have developed
+          and improved digital products and services with business models
+          ranging from digital tools to develop solutions for other
+          organizations,
+        </p>
+        <p className="mb-8 text-center lg:text-left lg:text-lg">
+          ✔ In addition to collaborate with communities with Internet access and
+          help them with tools to be more, work that has filled me with
+          satisfaction to help people through technology.
+        </p>
         <SkillsList />
       </Wrapper>
     </section>

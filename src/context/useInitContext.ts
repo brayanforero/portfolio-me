@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
-import { AppStateValue } from "./AppState";
+import { AppState, AppStateValue } from "./AppState";
 import debouce from "just-debounce-it";
 function useInitContext() {
-  const [state, setState] = useState<AppStateValue>({
-    screenSize: window.innerWidth,
-  });
+  const [state, setState] = useState<AppStateValue>(AppState);
 
   useEffect(() => {
     const handler = debouce(() => {
       console.log("Despues de 800ms");
-      setState({ screenSize: window.innerWidth });
+      setState({ ...state, screenSize: window.innerWidth });
     }, 600);
 
     window.addEventListener("resize", handler);
