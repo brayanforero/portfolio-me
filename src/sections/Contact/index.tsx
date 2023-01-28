@@ -1,10 +1,12 @@
-import './index.css'
-import Social from './Social'
+import "./index.css";
+import Social from "./Social";
 function Contact() {
   return (
     <section id="findMe" className="Contact">
-      <h2 className="mb-5 text-center text-primary-500">Find Me!</h2>
-      <div className="flex flex-wrap items-center justify-center gap-4">
+      <h2 className="Contact-h2">
+        Let's <span className="text-gradient">Talk</span>
+      </h2>
+      <div className="Contact-rrss">
         <Social url="https://wa.me/584160353742" name="whatsapp">
           <i className="bx bxl-whatsapp"></i>
         </Social>
@@ -14,12 +16,9 @@ function Contact() {
         <Social url="https://github.com/brayanforero" name="github">
           <i className="bx bxl-github"></i>
         </Social>
-        <Social url="https://m.me/brayan.foreroosorio" name="messenger">
-          <i className="bx bxl-messenger"></i>
-        </Social>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

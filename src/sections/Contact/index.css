@@ -1,26 +1,15 @@
-/* .Contact {
-  @apply relative py-8 mb-5 bg-white rounded shadow;
+.Contact {
+  @apply pt-32 mb-5 rounded shadow;
+}
+
+.Contact-h2 {
+  @apply mb-12 lg:mb-16 text-center lg:text-left text-4xl lg:text-[4rem] xl:text-6xl;
+}
+
+.Contact-rrss {
+  @apply flex flex-wrap items-center justify-center gap-4;
 }
 
 .Contact__social {
-  @apply flex items-center justify-center w-32 h-32 gap-2 p-5 text-4xl font-bold rounded shadow opacity-100 cursor-default lg:cursor-pointer lg:w-36 lg:h-36 bg-grays-300 hover:opacity-90;
+  @apply flex items-center justify-center gap-2 p-5 text-4xl text-white transition-all w-36 h-36 bg-gradient-to-r from-blue-alt to-blue rounded-3xl hover:bg-gradient-to-r hover:from-white-alt hover:to-white-alt hover:text-black-alt;
 }
-.Contact__social--whatsapp {
-  background-color: hsl(142, 70%, 49%);
-  @apply text-grays-100;
-}
-
-.Contact__social--linkedin {
-  background-color: hsl(199, 85%, 36%);
-  @apply text-grays-100;
-}
-
-.Contact__social--messenger {
-  background: #00b2ff;
-  background: linear-gradient(to bottom, #00b2ff 0%, #006aff 100%);
-  @apply text-grays-100;
-}
-
-.Contact__social--github {
-  @apply text-grays-100 bg-grays-700;
-} */

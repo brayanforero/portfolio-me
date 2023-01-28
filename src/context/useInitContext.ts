@@ -6,7 +6,6 @@ function useInitContext() {
 
   useEffect(() => {
     const handler = debouce(() => {
-      console.log("Despues de 800ms");
       setState({ ...state, screenSize: window.innerWidth });
     }, 600);
 

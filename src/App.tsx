@@ -1,7 +1,7 @@
 import { Wrapper } from "./components";
 import { AppProvider } from "./context";
 
-import { Header, Hero, FavoriteWorks, AboutMe } from "./sections";
+import { Header, Hero, FavoriteWorks, AboutMe, Contact } from "./sections";
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
           <FavoriteWorks />
         </Wrapper>
         <AboutMe />
+        <Wrapper>
+          <Contact />
+        </Wrapper>
       </main>
     </AppProvider>
   );
