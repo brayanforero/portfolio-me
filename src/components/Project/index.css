@@ -15,7 +15,7 @@
 }
 
 .Project-h3 {
-  @apply text-2xl lg:text-3xl;
+  @apply mb-5 text-2xl lg:text-3xl;
 }
 
 .Project-p {
@@ -23,5 +23,9 @@
 }
 
 .Project-star {
-  @apply absolute text-2xl text-transparent lg:text-4xl bottom-4 right-4 bg-clip-text bg-gradient-to-b from-blue-alt to-blue;
+  @apply absolute text-2xl text-transparent lg:text-4xl top-4 right-4 bg-clip-text bg-gradient-to-b from-blue-alt to-blue;
+}
+
+.Project-buttons {
+  @apply flex flex-col gap-4 pt-5 md:flex-row;
 }

@@ -9,8 +9,7 @@ function FavoriteWorks() {
           Proj<span className="text-gradient">ects.</span>
         </h2>
         <p className="FavoriteWorks-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magnam
-          alias blanditiis debitis facilis maxime sit at quasi commodi saepe!
+          Projects and jobs I have worked on during my time as a developer.
         </p>
       </div>
       <ProjectList />
