@@ -2,7 +2,7 @@ import "./index.css";
 import Social from "./Social";
 function Contact() {
   return (
-    <section id="findMe" className="Contact">
+    <section id="talk" className="Contact">
       <h2 className="Contact-h2">
         Let's <span className="text-gradient">Talk</span>
       </h2>

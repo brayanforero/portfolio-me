@@ -3,7 +3,7 @@ import "./index.css";
 
 function FavoriteWorks() {
   return (
-    <section className="FavoriteWorks">
+    <section id="projects" className="FavoriteWorks">
       <div className="flex flex-col gap-8 mb-8 lg:flex-row">
         <h2 className="FavoriteWorks-h2">
           Proj<span className="text-gradient">ects.</span>

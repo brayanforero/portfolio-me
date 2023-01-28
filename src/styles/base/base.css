@@ -1,8 +1,9 @@
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
 
+
+  :root {
+    scroll-behavior: smooth;
+  }  
   ::-webkit-scrollbar {
     width: 7px;
     background-color: transparent;
@@ -24,7 +25,7 @@
   }
 
   body {
-    @apply text-sm text-white bg-black lg:text-base font-poppins;
+    @apply text-sm text-white transition-all bg-black lg:text-base font-poppins;
   }
 
   h1,

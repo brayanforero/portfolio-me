@@ -3,16 +3,16 @@ import "./index.css";
 
 function AboutMe() {
   return (
-    <section className="AboutMe">
+    <section id="aboutMe" className="AboutMe">
       <Wrapper>
         <div className="AboutMe-cta">
           <h2 className="AboutMe-h2">
             About <span className="text-gradient">Me</span>
           </h2>
-          <div className="flex flex-col justify-center gap-5 md:flex-row lg:justify-start lg:pl-16">
+          {/* <div className="flex flex-col justify-center gap-5 md:flex-row lg:justify-start lg:pl-16">
             <button className="button-primary big">Get in touch</button>
             <button className="button-white big ghost">View all works</button>
-          </div>
+          </div> */}
         </div>
         <p className="mb-8 text-center lg:text-left lg:text-lg">
           ✔ Hi! my name is Brayan and I am a web developer.

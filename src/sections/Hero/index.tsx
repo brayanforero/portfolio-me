@@ -15,10 +15,10 @@ function Hero() {
         </h2>
         <p className="Hero-p">JS/TS ⚪ REACT ⚪ TAILWIND CSS</p>
       </div>
-      <div className="Hero-cta">
+      {/* <div className="Hero-cta">
         <button className="button-white big">Get in Touch</button>
         <button className="button-white big ghost">View all works</button>
-      </div>
+      </div> */}
     </section>
   );
 }
