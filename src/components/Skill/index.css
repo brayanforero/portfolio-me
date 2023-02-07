@@ -5,21 +5,12 @@
 .Skill:hover .Skill-img {
   @apply opacity-100;
 }
-.Skill:hover .Skill-arrow {
-  transition: opacity 0.3s ease;
-  @apply opacity-0;
-}
 
 .Skill-name {
   @apply text-2xl lg:text-3xl;
 }
 
-.Skill-arrow {
-  @apply text-4xl rotate-45 opacity-100 lg:text-6xl;
-}
-
 .Skill-img {
-  transition: opacity 0.5s ease;
-  transition-delay: 0.25s;
-  @apply absolute z-10 block object-cover w-40 h-48 bg-white opacity-0 pointer-events-none lg:w-48 lg:h-56 md:right-16 rounded-3xl;
+  transition: opacity 0.3s ease;
+  @apply absolute z-10 flex items-center justify-center w-40 h-48 opacity-0 pointer-events-none text-8xl bg-gradient-to-r from-white to-white-alt lg:w-48 lg:h-56 md:right-12 rounded-3xl text-black-alt;
 }

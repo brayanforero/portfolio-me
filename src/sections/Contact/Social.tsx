@@ -1,19 +1,15 @@
 interface Props {
-  url: string
-  name: string
-  children: React.ReactNode
+  url: string;
+  name: string;
+  children: React.ReactNode;
 }
 
 function Social({ url, name, children }: Props) {
   return (
-    <a
-      href={url}
-      target="_blank"
-      className={`Contact__social Contact__social--${name}`}
-    >
+    <a href={url} target="_blank" className="Contact-social">
       {children}
     </a>
-  )
+  );
 }
 
-export default Social
+export default Social;

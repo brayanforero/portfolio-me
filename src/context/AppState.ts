@@ -9,20 +9,24 @@ export const AppState: AppStateValue = {
   screenSize: window.innerWidth,
   skills: [
     {
-      name: "JavaScript/Typescript",
-      icon: "https://t1.daumcdn.net/cfile/tistory/99A36C355BD9538324",
+      name: "Typescript",
+      icon: "bx bxl-typescript",
     },
     {
-      name: "React JS",
-      icon: "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg",
+      name: "React",
+      icon: "bx bxl-react",
     },
     {
-      name: "Tailwind Css",
-      icon: "https://raw.githubusercontent.com/praveenpuglia/tailwind-breeze/master/assets/logo.svg",
+      name: "Angular",
+      icon: "bx bxl-angular",
     },
     {
-      name: "Vite JS",
-      icon: "https://miro.medium.com/max/1400/1*In1BgimeWvX8_9NjKwoY2w.png",
+      name: "Redux",
+      icon: "bx bxl-redux",
+    },
+    {
+      name: "Tailwind",
+      icon: "bx bxl-tailwind-css",
     },
   ],
 };

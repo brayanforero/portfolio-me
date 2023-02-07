@@ -10,6 +10,6 @@
   @apply flex flex-wrap items-center justify-center gap-4;
 }
 
-.Contact__social {
+.Contact-social {
   @apply flex items-center justify-center gap-2 p-5 text-4xl text-white transition-all w-36 h-36 bg-gradient-to-r from-blue-alt to-blue rounded-3xl hover:bg-gradient-to-r hover:from-white-alt hover:to-white-alt hover:text-black-alt;
 }
