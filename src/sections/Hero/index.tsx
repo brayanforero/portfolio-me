@@ -11,9 +11,9 @@ function Hero() {
       <div className="Hero-texts">
         <h2 className="Hero-name">
           <span className="text-gradient">Hello, I'm Brayan Forero </span>
-          Fronted Web Developer.
+          Web Developer.
         </h2>
-        <p className="Hero-p">JS/TS ⚪ REACT ⚪ TAILWIND CSS</p>
+        <p className="Hero-p">Experience with stack React y Angular</p>
       </div>
       {/* <div className="Hero-cta">
         <button className="button-white big">Get in Touch</button>
