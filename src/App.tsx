@@ -1,5 +1,6 @@
+import { useContext } from "react";
 import { Wrapper } from "./components";
-import { AppProvider } from "./context";
+import { AppProvider, LanguageContext } from "./context";
 
 import {
   Header,
@@ -11,10 +12,14 @@ import {
 } from "./sections";
 
 function App() {
+  const { config } = useContext(LanguageContext);
+  const { isChecking } = config;
+
+  if (isChecking) return <WaitPlease />;
   return (
     <AppProvider>
       <Header />
-      <main>
+      <main className="fadeIn">
         <Wrapper>
           <Hero />
           <FavoriteWorks />
@@ -28,5 +33,13 @@ function App() {
     </AppProvider>
   );
 }
+
+const WaitPlease = () => {
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <h4>Just a second...</h4>
+    </div>
+  );
+};
 
 export default App;

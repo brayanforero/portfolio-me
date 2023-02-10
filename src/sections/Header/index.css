@@ -18,5 +18,9 @@
 }
 
 .Header-button {
-  @apply max-w-[140px] self-center lg:self-start;
+  @apply max-w-[140px];
+}
+
+.Hero-actions {
+  @apply flex items-center justify-center gap-4;
 }

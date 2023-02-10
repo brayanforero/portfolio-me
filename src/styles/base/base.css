@@ -1,9 +1,7 @@
 @layer base {
-
-
   :root {
     scroll-behavior: smooth;
-  }  
+  }
   ::-webkit-scrollbar {
     width: 7px;
     background-color: transparent;

@@ -12,7 +12,6 @@
 }
 
 .Hero-name {
-  line-height: 1.25;
   @apply mb-5 text-4xl lg:text-7xl;
 }
 

@@ -1,14 +1,22 @@
 @layer components {
-  [class^="button"] {
+  [class*="button"] {
     @apply px-5 py-2 font-semibold uppercase rounded-3xl;
   }
 
-  [class^="button"].big {
+  [class*="button"].big {
     @apply px-8 py-3 font-semibold uppercase rounded-3xl;
   }
 
-  [class^="button"].ghost {
+  [class*="button"].ghost {
     @apply text-white bg-transparent border-white-alt border-[1px] transition-all hover:bg-white-alt hover:text-black-alt;
+  }
+
+  [class*="button"].lang {
+    @apply flex items-center justify-center w-8 h-8 text-lg font-semibold text-white uppercase bg-transparent rounded-full lg:w-12 lg:h-12 lg:text-xl hover:bg-gradient-to-r hover:from-blue-alt hover:to-blue;
+  }
+
+  .lang.active {
+    @apply pointer-events-none bg-gradient-to-r from-blue-alt to-blue;
   }
 
   .button-white {
