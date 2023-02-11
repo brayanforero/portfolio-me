@@ -1,30 +1,45 @@
-import { useEffect, useState } from 'react'
-import { getWorks } from '../services/work'
-import { Work } from '../types/models/core'
+import { LanguageContext } from "@/context";
+import { getProjects } from "@/supabase";
+import { useContext, useEffect, useState } from "react";
+import { Work } from "../types/models/core";
 
 function useWorks() {
-  const [works, setWorks] = useState<Work[]>([])
-  const [loading, setLoading] = useState(false)
+  const {
+    config: { current },
+  } = useContext(LanguageContext);
+  const [works, setWorks] = useState<Work[]>([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
-    fecthWorks()
-  }, [])
-  const fecthWorks = async () => {
-    try {
-      setLoading(true)
-      const worksFromDb = await getWorks()
-      setWorks(worksFromDb)
-      setLoading(false)
-    } catch (error) {
-      setLoading(false)
-      console.log(error)
-      console.error('Unfetch works error')
+    window.localStorage.removeItem("projects");
+    fecthWorks();
+  }, [current]);
+
+  const fecthWorks = () => {
+    setLoading(true);
+    const localProjects = localStorage.getItem("projects");
+
+    if (localProjects) {
+      setLoading(false);
+      setWorks(JSON.parse(localProjects) as Work[]);
+      return;
     }
-  }
+
+    getProjects(current)
+      .then(({ data }) => {
+        if (data) {
+          setWorks(data);
+          window.localStorage.setItem("projects", JSON.stringify(data));
+        }
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
 
   return {
     loading,
     works,
-  }
+  };
 }
 
-export default useWorks
+export default useWorks;

@@ -6,7 +6,7 @@ interface Props {
 }
 
 function Project({ item }: Props) {
-  const { title, cover, description, preview, repo } = item;
+  const { title, cover, description, preview, repo, meta } = item;
   return (
     <article className="Project">
       <i className="bx bxs-star Project-star"></i>
@@ -15,7 +15,11 @@ function Project({ item }: Props) {
       </picture>
       <section className="Project-content">
         <h3 className="Project-h3">{title}</h3>
-        <p>{description}</p>
+        {meta ? (
+          <p className="text-lg font-semibold">{meta.company}</p>
+        ) : (
+          <p>{description}</p>
+        )}
         {preview && repo && (
           <div className="Project-buttons">
             <a href={preview} target="_blank" className="button-primary">
