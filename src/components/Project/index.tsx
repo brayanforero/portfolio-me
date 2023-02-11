@@ -16,7 +16,10 @@ function Project({ item }: Props) {
       <section className="Project-content">
         <h3 className="Project-h3">{title}</h3>
         {meta ? (
-          <p className="text-lg font-semibold">{meta.company}</p>
+          <p className="text-lg font-semibold">
+            <i className="text-xl bx bxs-buildings"></i>
+            {` ${meta.company}`}
+          </p>
         ) : (
           <p>{description}</p>
         )}
