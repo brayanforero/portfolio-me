@@ -25,12 +25,16 @@ function Project({ item }: Props) {
         )}
         {preview && repo && (
           <div className="Project-buttons">
-            <a href={preview} target="_blank" className="button-primary">
-              Preview
-            </a>
-            <a href={repo} className="button ghost">
-              Repo
-            </a>
+            {preview && (
+              <a href={preview} target="_blank" className="button-primary">
+                Preview
+              </a>
+            )}
+            {repo && (
+              <a href={repo} className="button ghost">
+                Repo
+              </a>
+            )}
           </div>
         )}
       </section>
