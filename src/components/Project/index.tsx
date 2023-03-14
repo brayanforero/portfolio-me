@@ -31,7 +31,7 @@ function Project({ item }: Props) {
             </a>
           )}
           {repo && (
-            <a href={repo} className="button ghost">
+            <a href={repo} target="_blank" className="button ghost">
               Repo
             </a>
           )}
