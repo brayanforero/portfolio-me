@@ -1,0 +1,4 @@
+.Project-list {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  @apply w-full grid  gap-5 lg:gap-8 place-content-center
+}

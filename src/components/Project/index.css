@@ -3,7 +3,8 @@
 }
 
 .Project-picture {
-  @apply h-60 lg:h-[80] bg-white;
+  aspect-ratio: 8/5;
+  @apply  bg-white;
 }
 
 .Project-img {
@@ -15,11 +16,15 @@
 }
 
 .Project-h3 {
-  @apply mb-5 text-2xl lg:text-3xl;
+  @apply mb-5 text-2xl;
+}
+
+.Project-company {
+  @apply text-lg opacity-90 mb-4
 }
 
 .Project-p {
-  @apply text-base lg:text-2xl opacity-90;
+  @apply text-base opacity-80;
 }
 
 .Project-star {
