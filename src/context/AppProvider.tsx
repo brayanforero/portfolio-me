@@ -1,16 +1,16 @@
-import { ReactNode } from "react";
-import AppContext from "./AppContext";
-import useInitContext from "./useInitContext";
+import { type ReactNode } from 'react'
+import AppContext from './AppContext'
+import useInitContext from './useInitContext'
 
 interface Props {
-  children: ReactNode;
+  children: ReactNode
 }
 
-function AppProvider({ children }: Props) {
-  const { state } = useInitContext();
+function AppProvider ({ children }: Props): JSX.Element {
+  const { state } = useInitContext()
   return (
     <AppContext.Provider value={{ state }}>{children}</AppContext.Provider>
-  );
+  )
 }
 
-export default AppProvider;
+export default AppProvider

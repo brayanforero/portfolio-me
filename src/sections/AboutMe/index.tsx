@@ -1,14 +1,14 @@
-import { SkillsList, Wrapper } from "@/components";
-import { LanguageContext } from "@/context";
-import { useContext } from "react";
-import "./index.css";
+import { SkillsList, Wrapper } from '@/components'
+import { LanguageContext } from '@/context'
+import { useContext } from 'react'
+import './index.css'
 
-function AboutMe() {
+function AboutMe (): JSX.Element {
   const {
-    config: { lang },
-  } = useContext(LanguageContext);
-  const { title, copy } = lang.aboutSection;
-  const newTitle = title.split(/\s/);
+    config: { lang }
+  } = useContext(LanguageContext)
+  const { title, copy } = lang.aboutSection
+  const newTitle = title.split(/\s/)
   return (
     <section id="aboutMe" className="AboutMe">
       <Wrapper>
@@ -34,7 +34,7 @@ function AboutMe() {
         <SkillsList />
       </Wrapper>
     </section>
-  );
+  )
 }
 
-export default AboutMe;
+export default AboutMe

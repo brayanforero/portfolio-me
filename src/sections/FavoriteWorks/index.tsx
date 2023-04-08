@@ -1,15 +1,15 @@
-import { ProjectList } from "@/components";
-import { LanguageContext } from "@/context";
-import { useContext } from "react";
-import "./index.css";
+import { ProjectList } from '@/components'
+import { LanguageContext } from '@/context'
+import { useContext } from 'react'
+import './index.css'
 
-function FavoriteWorks() {
+function FavoriteWorks (): JSX.Element {
   const {
-    config: { lang },
-  } = useContext(LanguageContext);
+    config: { lang }
+  } = useContext(LanguageContext)
   const {
-    experience: { title, copy },
-  } = lang;
+    experience: { title, copy }
+  } = lang
   return (
     <section id="projects" className="FavoriteWorks">
       <div className="flex flex-col gap-8 mb-8 lg:flex-row">
@@ -21,7 +21,7 @@ function FavoriteWorks() {
       </div>
       <ProjectList />
     </section>
-  );
+  )
 }
 
-export default FavoriteWorks;
+export default FavoriteWorks

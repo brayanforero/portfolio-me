@@ -1,14 +1,14 @@
-import { LanguageContext } from "@/context";
-import { assets } from "@/utils";
-import { useContext } from "react";
-import "./index.css";
-const Img = assets("img/Profile.png");
+import { LanguageContext } from '@/context'
+import { assets } from '@/utils'
+import { useContext } from 'react'
+import './index.css'
+const Img = assets('img/Profile.png')
 
-function Hero() {
+function Hero (): JSX.Element {
   const {
-    config: { lang },
-  } = useContext(LanguageContext);
-  const { title, description } = lang.hero;
+    config: { lang }
+  } = useContext(LanguageContext)
+  const { title, description } = lang.hero
   return (
     <section className="Hero fadeIn">
       <picture className="Hero-picture">
@@ -28,7 +28,7 @@ function Hero() {
         <button className="button-white big ghost">View all works</button>
       </div> */}
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

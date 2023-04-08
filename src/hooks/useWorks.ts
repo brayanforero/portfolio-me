@@ -1,45 +1,50 @@
-import { LanguageContext } from "@/context";
-import { getProjects } from "@/supabase";
-import { useContext, useEffect, useState } from "react";
-import { Work } from "../types/models/core";
+import { LanguageContext } from '@/context'
+import { getProjects } from '@/supabase'
+import { useContext, useEffect, useState } from 'react'
+import { type Work } from '../types/models/core'
 
-function useWorks() {
+interface UseWorkValue {
+  loading: boolean
+  works: Work[]
+}
+
+function useWorks (): UseWorkValue {
   const {
-    config: { current },
-  } = useContext(LanguageContext);
-  const [works, setWorks] = useState<Work[]>([]);
-  const [loading, setLoading] = useState(false);
+    config: { current }
+  } = useContext(LanguageContext)
+  const [works, setWorks] = useState<Work[]>([])
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
-    window.localStorage.removeItem("projects");
-    fecthWorks();
-  }, [current]);
+    window.localStorage.removeItem('projects')
+    fecthWorks()
+  }, [current])
 
-  const fecthWorks = () => {
-    setLoading(true);
-    const localProjects = localStorage.getItem("projects");
+  const fecthWorks = (): void => {
+    setLoading(true)
+    const localProjects = localStorage.getItem('projects')
 
-    if (localProjects) {
-      setLoading(false);
-      setWorks(JSON.parse(localProjects) as Work[]);
-      return;
+    if (localProjects !== null) {
+      setLoading(false)
+      setWorks(JSON.parse(localProjects) as Work[])
+      return
     }
 
     getProjects(current)
       .then(({ data }) => {
-        if (data) {
-          setWorks(data);
-          window.localStorage.setItem("projects", JSON.stringify(data));
+        if (data != null) {
+          setWorks(data)
+          window.localStorage.setItem('projects', JSON.stringify(data))
         }
       })
       .finally(() => {
-        setLoading(false);
-      });
-  };
+        setLoading(false)
+      })
+  }
 
   return {
     loading,
-    works,
-  };
+    works
+  }
 }
 
-export default useWorks;
+export default useWorks

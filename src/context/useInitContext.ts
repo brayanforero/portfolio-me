@@ -1,20 +1,9 @@
-import { useEffect, useState } from "react";
-import { AppState, AppStateValue } from "./AppState";
-import debouce from "just-debounce-it";
-function useInitContext() {
-  const [state, setState] = useState<AppStateValue>(AppState);
+import { useState } from 'react'
+import { AppState, type AppStateValue } from './AppState'
+function useInitContext (): { state: AppStateValue } {
+  const [state] = useState<AppStateValue>(AppState)
 
-  useEffect(() => {
-    const handler = debouce(() => {
-      setState({ ...state, screenSize: window.innerWidth });
-    }, 600);
-
-    window.addEventListener("resize", handler);
-    return () => {
-      window.removeEventListener("resize", handler);
-    };
-  }, []);
-  return { state };
+  return { state }
 }
 
-export default useInitContext;
+export default useInitContext

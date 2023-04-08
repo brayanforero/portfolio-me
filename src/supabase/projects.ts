@@ -1,10 +1,17 @@
-import supabase from "./store";
+import { type PostgrestError } from '@supabase/supabase-js'
+import { type Work } from '@/types'
+import supabase from './store'
 
-export const getProjects = async (key: "es" | "en" = "es") => {
+interface SupabaseProjectResult {
+  data: Work[] | null
+  error: PostgrestError | null
+}
+
+export const getProjects = async (key: 'es' | 'en' = 'es'): Promise<SupabaseProjectResult> => {
   const { data, error } = await supabase
-    .from("projects")
+    .from('projects')
     .select()
-    .filter("lang", "eq", key);
+    .filter('lang', 'eq', key)
 
-  return { data, error };
-};
+  return { data, error }
+}

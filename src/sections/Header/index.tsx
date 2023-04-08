@@ -1,17 +1,17 @@
-import { Wrapper } from "@/components";
-import { LanguageContext } from "@/context";
-import { assets } from "@/utils";
-import { useContext } from "react";
+import { Wrapper } from '@/components'
+import { LanguageContext } from '@/context'
+import { assets } from '@/utils'
+import { useContext } from 'react'
 
-import "./index.css";
-const CV = assets("assets/CV/BrayanForero.CV.pdf");
+import './index.css'
+const CV = assets('assets/CV/BrayanForero.CV.pdf')
 
-function Header() {
+function Header (): JSX.Element {
   const {
     config: { lang, current },
-    dispacher,
-  } = useContext(LanguageContext);
-  const { navigation, contact } = lang;
+    dispacher
+  } = useContext(LanguageContext)
+  const { navigation, contact } = lang
   return (
     <header id="top" className="Header">
       <Wrapper>
@@ -36,16 +36,16 @@ function Header() {
           <div className="Hero-actions">
             <div className="flex gap-3">
               <button
-                onClick={() => dispacher("en")}
-                className={`button lang ${current === "en" ? "active" : null}`}
+                onClick={() => { dispacher('en') }}
+                className={`button lang${current === 'en' ? ' active' : ''}`}
               >
-                🇺🇲
+                en
               </button>
               <button
-                onClick={() => dispacher("es")}
-                className={`button lang ${current === "es" ? "active" : null}`}
+                onClick={() => { dispacher('es') }}
+                className={`button lang${current === 'es' ? ' active' : ''}`}
               >
-                🇻🇪
+                es
               </button>
             </div>
             <a href="#talk" className="Header-button button-white">
@@ -55,7 +55,7 @@ function Header() {
         </nav>
       </Wrapper>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

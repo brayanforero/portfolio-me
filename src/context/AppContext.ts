@@ -1,9 +1,11 @@
-import { createContext } from "react";
-import { AppStateValue } from "./AppState";
+import { createContext } from 'react'
+import { AppState, type AppStateValue } from './AppState'
 
 export interface AppContextValue {
-  state: AppStateValue;
+  state: AppStateValue
 }
-const AppContext = createContext<AppContextValue>({} as AppContextValue);
+const AppContext = createContext<AppContextValue>({
+  state: AppState
+})
 
-export default AppContext;
+export default AppContext

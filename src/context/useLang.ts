@@ -1,73 +1,74 @@
-import { AppLangConfig } from "@/types";
+import { type AppLangConfig } from '@/types'
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react'
+import { initialLang } from './consts'
 
 interface LangState {
-  lang: Lang;
-  isChecking: boolean;
-  config: AppLangConfig;
+  lang: Lang
+  isChecking: boolean
+  config: AppLangConfig
 }
 
-type Lang = "es" | "en";
+type Lang = 'es' | 'en'
 
-function useLang() {
-  const userLang = window.localStorage.getItem("lang") || "es";
+function useLang () {
+  const userLang = window.localStorage.getItem('lang') ?? 'es'
   const [state, setState] = useState<LangState>({
     lang: userLang as Lang,
     isChecking: true,
-    config: {} as AppLangConfig,
-  });
+    config: initialLang
+  })
 
-  const { lang } = state;
+  const { lang } = state
 
   useEffect(() => {
-    const langCached = window.localStorage.getItem(state.lang);
+    const langCached = window.localStorage.getItem(state.lang)
 
     if (langCached) {
       setState((prev) => ({
         ...prev,
         config: JSON.parse(langCached) as AppLangConfig,
-        isChecking: false,
-      }));
+        isChecking: false
+      }))
     }
 
-    loadLang();
-  }, [lang]);
+    loadLang()
+  }, [lang])
 
   const loadLang = () => {
     fetch(`/lang/${lang}.json`)
-      .then((res) => res.json())
+      .then(async (res) => await res.json())
       .then((config) => {
         setState((prev) => ({
           ...prev,
-          config,
-        }));
-        window.localStorage.setItem(state.lang, JSON.stringify(config));
-        window.localStorage.setItem("lang", state.lang);
+          config
+        }))
+        window.localStorage.setItem(state.lang, JSON.stringify(config))
+        window.localStorage.setItem('lang', state.lang)
       })
       .finally(() => {
         setState((prev) => ({
           ...prev,
-          isChecking: false,
-        }));
-      });
-  };
+          isChecking: false
+        }))
+      })
+  }
 
   const changeLang = useCallback(
     (key: Lang) => {
       setState((prev) => ({
         ...prev,
         lang: key,
-        isChecking: true,
-      }));
+        isChecking: true
+      }))
     },
     [setState]
-  );
+  )
 
   return {
     config: state,
-    changeLang,
-  };
+    changeLang
+  }
 }
 
-export default useLang;
+export default useLang

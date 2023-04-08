@@ -1,4 +1,4 @@
-export function NavSkeleton() {
+export function NavSkeleton (): JSX.Element {
   return (
     <div className="fixed top-0 left-0 z-40 flex items-center justify-between w-full px-8 py-5 bg-white shadow-sm">
       <span className="p-4 rounded-full skeleton"></span>

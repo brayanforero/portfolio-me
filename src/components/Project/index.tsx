@@ -1,12 +1,12 @@
-import { Work } from "@/types";
-import "./index.css";
+import { type Work } from '@/types'
+import './index.css'
 
 interface Props {
-  item: Work;
+  item: Work
 }
 
-function Project({ item }: Props) {
-  const { title, cover, description, preview, repo, meta } = item;
+function Project ({ item }: Props): JSX.Element {
+  const { title, cover, description, preview, repo, meta } = item
   return (
     <article className="Project">
       <i className="bx bxs-star Project-star"></i>
@@ -15,30 +15,32 @@ function Project({ item }: Props) {
       </picture>
       <section className="Project-content">
         <h3 className="Project-h3">{title}</h3>
-        {meta ? (
+        {(meta != null)
+          ? (
           <p className="text-lg font-semibold">
             <i className="text-xl bx bxs-buildings"></i>
             {` ${meta.company}`}
           </p>
-        ) : (
+            )
+          : (
           <p>{description}</p>
-        )}
+            )}
 
         <div className="Project-buttons">
-          {preview && (
-            <a href={preview} target="_blank" className="button-primary">
+          {preview !== null && (
+            <a href={preview} target="_blank" className="button-primary" rel="noreferrer">
               Preview
             </a>
           )}
-          {repo && (
-            <a href={repo} target="_blank" className="button ghost">
+          {repo !== null && (
+            <a href={repo} target="_blank" className="button ghost" rel="noreferrer">
               Repo
             </a>
           )}
         </div>
       </section>
     </article>
-  );
+  )
 }
 
-export default Project;
+export default Project

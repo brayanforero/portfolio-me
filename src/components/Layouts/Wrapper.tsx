@@ -1,11 +1,10 @@
-import { ReactNode } from 'react'
-
 interface Props {
-  children: ReactNode
+  children: React.ReactNode
 }
-
-const Wrapper = ({ children }: Props) => {
-  return <div className="wrapper">{children}</div>
+const Wrapper: React.FC<Props> = ({ children }) => {
+  return <div className="wrapper">
+    {children}
+  </div>
 }
 
 export default Wrapper

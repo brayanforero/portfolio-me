@@ -1,18 +1,18 @@
-import useWorks from "@/hooks/useWorks";
+import useWorks from '@/hooks/useWorks'
 
-import Project from "../Project";
+import Project from '../Project'
 
-function ProjectList() {
-  const { loading, works } = useWorks();
+function ProjectList (): JSX.Element {
+  const { loading, works } = useWorks()
 
-  if (loading) return <p className="text-2xl text-gradient">Loading...</p>;
+  if (loading) return <p className="text-2xl text-gradient">Loading...</p>
   return (
     <div className="grid grid-cols-1 gap-5 lg:gap-8 md:grid-cols-2 lg:grid-cols-4">
       {works.map((w, i) => (
         <Project key={`${w.title}-${i}`} item={w} />
       ))}
     </div>
-  );
+  )
 }
 
-export default ProjectList;
+export default ProjectList

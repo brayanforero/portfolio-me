@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import { Wrapper } from "./components";
-import { AppProvider, LanguageContext } from "./context";
+import { useContext } from 'react'
+import { Wrapper } from './components'
+import { AppProvider, LanguageContext } from './context'
 
 import {
   Header,
@@ -8,14 +8,14 @@ import {
   FavoriteWorks,
   AboutMe,
   Contact,
-  Footer,
-} from "./sections";
+  Footer
+} from './sections'
 
-function App() {
-  const { config } = useContext(LanguageContext);
-  const { isChecking } = config;
+function App (): JSX.Element {
+  const { config } = useContext(LanguageContext)
+  const { isChecking } = config
 
-  if (isChecking) return <WaitPlease />;
+  if (isChecking) return <WaitPlease />
   return (
     <AppProvider>
       <Header />
@@ -31,15 +31,15 @@ function App() {
       </main>
       <Footer />
     </AppProvider>
-  );
+  )
 }
 
-const WaitPlease = () => {
+const WaitPlease: React.FC = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <h4>Just a second...</h4>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

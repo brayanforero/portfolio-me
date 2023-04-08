@@ -1,12 +1,12 @@
-import { LanguageContext, LanguageProvider } from "@/context";
-import { useContext } from "react";
-import "./index.css";
-import Social from "./Social";
-function Contact() {
+import { LanguageContext } from '@/context'
+import { useContext } from 'react'
+import './index.css'
+import Social from './Social'
+function Contact (): JSX.Element {
   const {
-    config: { lang },
-  } = useContext(LanguageContext);
-  const { title } = lang.contact;
+    config: { lang }
+  } = useContext(LanguageContext)
+  const { title } = lang.contact
   return (
     <section id="talk" className="Contact">
       <h2 className="Contact-h2">
@@ -25,7 +25,7 @@ function Contact() {
         </Social>
       </div>
     </section>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

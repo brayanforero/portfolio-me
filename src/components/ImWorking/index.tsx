@@ -1,1 +1,1 @@
-export { default as ImWorking } from './ImWorking';
+export { default as ImWorking } from './ImWorking'

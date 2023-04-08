@@ -1,8 +1,8 @@
-const base = "/";
-function assets(resource: string) {
-  if (!resource) throw new Error("Exepected a path valid to rouserce");
+const base = '/'
+function assets (resource: string): string {
+  if (resource === '') throw new Error('Exepected a path valid to rouserce')
 
-  return `${base}${resource}`;
+  return `${base}${resource}`
 }
 
-export default assets;
+export default assets

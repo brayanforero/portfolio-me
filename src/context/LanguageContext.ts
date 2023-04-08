@@ -1,15 +1,23 @@
-import { AppLangConfig } from "@/types";
-import { createContext } from "react";
+import { type AppLangConfig } from '@/types'
+import { createContext } from 'react'
+import { initialLang } from './consts'
 
-interface LanguageContext {
+export interface LanguageContextState {
   config: {
-    isChecking: boolean;
-    lang: AppLangConfig;
-    current: "es" | "en";
-  };
-  dispacher: (key: "es" | "en") => void;
+    isChecking: boolean
+    lang: AppLangConfig
+    current: 'es' | 'en'
+  }
+  dispacher: (key: 'es' | 'en') => void
 }
 
-const LanguageContext = createContext<LanguageContext>({} as LanguageContext);
+const LanguageContext = createContext<LanguageContextState>({
+  config: {
+    isChecking: false,
+    current: 'es',
+    lang: initialLang
+  },
+  dispacher: (key) => {}
+})
 
-export default LanguageContext;
+export default LanguageContext
