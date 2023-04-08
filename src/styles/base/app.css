@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  @apply w-full px-3 m-0 lg:px-4 xl:px-0 max-w-[1300px] lg:mx-auto;
+  @apply w-full px-3 m-0 lg:px-4 xl:px-0 max-w-[1200px] lg:mx-auto;
 }
 .skeleton {
   animation: skeleton 1.5s alternate infinite;
