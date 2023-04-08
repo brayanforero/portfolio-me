@@ -1,5 +1,5 @@
 .Contact {
-  @apply pt-32 mb-5 rounded shadow;
+  @apply pt-32 mb-5 rounded;
 }
 
 .Contact-h2 {

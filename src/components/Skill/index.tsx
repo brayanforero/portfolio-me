@@ -4,10 +4,8 @@ import './index.css'
 function Skill ({ name = 'Lorem Ipsum', icon }: SkillValue): JSX.Element {
   return (
     <article className="Skill">
-      <h2 className="Skill-name">{name}</h2>
-      <div className="Skill-img">
-        <i className={icon}></i>
-      </div>
+      <i className={icon}></i>
+      <p className="Skill-name">{name}</p>
     </article>
   )
 }

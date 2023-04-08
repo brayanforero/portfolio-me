@@ -1,16 +1,18 @@
 .Skill {
-  @apply relative flex items-center justify-between px-8 py-16 transition-all border-t-2 border-white hover:bg-gradient-to-r from-blue-alt to-blue;
-}
-
-.Skill:hover .Skill-img {
-  @apply opacity-100;
+  @apply flex flex-col items-center justify-center px-8 py-16 transition-all hover:bg-gradient-to-r from-blue-alt to-blue rounded-3xl;
 }
 
 .Skill-name {
-  @apply text-2xl lg:text-3xl;
+  @apply text-2xl;
 }
 
-.Skill-img {
-  transition: opacity 0.3s ease;
-  @apply absolute z-10 flex items-center justify-center w-40 h-48 opacity-0 pointer-events-none text-8xl bg-gradient-to-r from-white to-white-alt lg:w-48 lg:h-56 md:right-12 rounded-3xl text-black-alt;
+.Skill i {
+  
+  @apply text-4xl transition-transform
 }
+
+.Skill:hover i {
+  transform: scale(1.5);
+}
+
+

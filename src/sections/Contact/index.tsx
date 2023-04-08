@@ -1,7 +1,7 @@
-import { LanguageContext } from '@/context'
 import { useContext } from 'react'
-import './index.css'
+import { LanguageContext } from '@/context'
 import Social from './Social'
+import './index.css'
 function Contact (): JSX.Element {
   const {
     config: { lang }
