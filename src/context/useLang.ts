@@ -9,9 +9,14 @@ interface LangState {
   config: AppLangConfig
 }
 
+interface UseLangValue {
+  config: LangState
+  changeLang: (key: Lang) => void
+}
+
 type Lang = 'es' | 'en'
 
-function useLang () {
+function useLang (): UseLangValue {
   const userLang = window.localStorage.getItem('lang') ?? 'es'
   const [state, setState] = useState<LangState>({
     lang: userLang as Lang,
@@ -24,7 +29,7 @@ function useLang () {
   useEffect(() => {
     const langCached = window.localStorage.getItem(state.lang)
 
-    if (langCached) {
+    if (langCached != null) {
       setState((prev) => ({
         ...prev,
         config: JSON.parse(langCached) as AppLangConfig,
@@ -35,7 +40,7 @@ function useLang () {
     loadLang()
   }, [lang])
 
-  const loadLang = () => {
+  const loadLang = (): void => {
     fetch(`/lang/${lang}.json`)
       .then(async (res) => await res.json())
       .then((config) => {

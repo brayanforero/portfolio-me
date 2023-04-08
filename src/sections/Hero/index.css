@@ -12,11 +12,11 @@
 }
 
 .Hero-name {
-  @apply mb-5 text-4xl lg:text-7xl;
+  @apply mb-5 text-4xl xl:text-6xl;
 }
 
 .Hero-p {
-  @apply self-center max-w-4xl mx-auto lg:text-xl xl:text-2xl;
+  @apply self-center text-xl;
 }
 
 .Hero-cta {

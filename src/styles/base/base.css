@@ -23,7 +23,7 @@
   }
 
   body {
-    @apply text-sm text-white transition-all bg-black lg:text-base font-poppins;
+    @apply text-sm text-white transition-all bg-black xl:text-base font-poppins;
   }
 
   h1,
