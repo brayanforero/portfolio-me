@@ -1,20 +1,4 @@
-/* .Imworking {
+.Imworking {
   font-family: var(--title-font);
   @apply relative flex items-center justify-center h-screen font-bold;
 }
-
-.fire {
-  animation: showFire 1.5s infinite alternate;
-  filter: invert(1);
-} */
-
-/* @keyframes showFire {
-  from {
-   
-    filter: hue-rotate(190deg);
-  }
-  to {
-   
-    filter: hue-rotate(0);
-  }
-} */
