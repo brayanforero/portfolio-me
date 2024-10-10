@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { ImWorking } from './components'
+import App from './App'
 import './styles/index.css'
 
 const rootDiv = document.getElementById('root')
@@ -11,7 +11,7 @@ if (rootDiv == null) {
 } else {
   ReactDOM.createRoot(rootDiv).render(
     <React.StrictMode>
-      <ImWorking />
+      <App />
     </React.StrictMode>
   )
 }

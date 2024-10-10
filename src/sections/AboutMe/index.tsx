@@ -1,26 +1,20 @@
 import { SkillsList, Wrapper } from '@/components'
-import { LanguageContext } from '@/context'
-import { useContext } from 'react'
 import './index.css'
+const copy = [
+  "✔ Ingeniero informático y desempeño como desarrollador de software",
+  "✔ Apasionado por la tecnología desde que era un niño, ya que nos permite crear cosas mas allá de nuestra imaginación",
+  "✔ He colaborado con comunidades con pocos recursos y les he ayudado con herramientas para ser mejores en sus labores, trabajo que me ha llenado de satisfacción por ayudar a la gente a través de la tecnología, así mismo en una gran empresa donde brindan apoyo a otras corporaciones."
+]
+function AboutMe(): JSX.Element {
 
-function AboutMe (): JSX.Element {
-  const {
-    config: { lang }
-  } = useContext(LanguageContext)
-  const { title, copy } = lang.aboutSection
-  const newTitle = title.split(/\s/)
   return (
     <section id="aboutMe" className="AboutMe">
       <Wrapper>
         <div className="AboutMe-cta">
           <h2 className="AboutMe-h2">
-            {newTitle.at(0)}
-            <span className="text-gradient"> {newTitle.at(-1)}</span>
+            Sobre <span className="text-gradient">Mi</span>
           </h2>
-          {/* <div className="flex flex-col justify-center gap-5 md:flex-row lg:justify-start lg:pl-16">
-            <button className="button-primary big">Get in touch</button>
-            <button className="button-white big ghost">View all works</button>
-          </div> */}
+
         </div>
         {copy?.map((text, i) => (
           <p

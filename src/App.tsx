@@ -1,21 +1,17 @@
-import { useContext } from 'react'
 import { Wrapper } from './components'
-import { AppProvider, LanguageContext } from './context'
+import { AppProvider } from './context'
 
 import {
-  Header,
-  Hero,
-  FavoriteWorks,
   AboutMe,
   Contact,
-  Footer
+  FavoriteWorks,
+  Footer,
+  Header,
+  Hero
 } from './sections'
 
-function App (): JSX.Element {
-  const { config } = useContext(LanguageContext)
-  const { isChecking } = config
+function App(): JSX.Element {
 
-  if (isChecking) return <WaitPlease />
   return (
     <AppProvider>
       <Header />

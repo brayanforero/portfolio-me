@@ -1,14 +1,9 @@
-import { LanguageContext } from '@/context'
 import { assets } from '@/utils'
-import { useContext } from 'react'
 import './index.css'
 const Img = assets('img/Profile.png')
 
-function Hero (): JSX.Element {
-  const {
-    config: { lang }
-  } = useContext(LanguageContext)
-  const { title, description } = lang.hero
+function Hero(): JSX.Element {
+
   return (
     <section className="Hero fadeIn">
       <picture className="Hero-picture">
@@ -16,12 +11,9 @@ function Hero (): JSX.Element {
       </picture>
       <div className="Hero-texts">
         <h2 className="Hero-name">
-          {title.slice(0, title.length / 2.75)}
-          <span className="text-gradient">
-            {title.slice(title.length / 2.75)}
-          </span>
+          Hola, soy <span className="text-gradient">Brayan Forero</span> Desarrolador de Software.
         </h2>
-        <p className="Hero-p">{description}</p>
+        <p className="Hero-p">Desarrolador Software con experiencia creando soluciones para aplicaciones web</p>
       </div>
       {/* <div className="Hero-cta">
         <button className="button-white big">Get in Touch</button>

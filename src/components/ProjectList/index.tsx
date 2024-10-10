@@ -1,11 +1,9 @@
-import useWorks from '@/hooks/useWorks'
+import { PROJECTS } from '@/context'
 import Project from '../Project'
 import './index.css'
 
-function ProjectList (): JSX.Element {
-  const { loading, works } = useWorks()
-
-  if (loading) return <p className="text-2xl text-gradient">Loading...</p>
+function ProjectList(): JSX.Element {
+  const works = PROJECTS
   return (
     <div className="Project-list">
       {works.map((w, i) => (

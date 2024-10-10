@@ -1,17 +1,11 @@
 import { Wrapper } from '@/components'
-import { LanguageContext } from '@/context'
 import { assets } from '@/utils'
-import { useContext } from 'react'
 
 import './index.css'
 const CV = assets('assets/CV/BrayanForero.CV.pdf')
 
-function Header (): JSX.Element {
-  const {
-    config: { lang, current },
-    dispacher
-  } = useContext(LanguageContext)
-  const { navigation, contact } = lang
+function Header(): JSX.Element {
+
   return (
     <header id="top" className="Header">
       <Wrapper>
@@ -19,37 +13,24 @@ function Header (): JSX.Element {
         <nav className="Header-nav">
           <ul className="Header-ul">
             <li className="Header-li">
-              <a href="#top">{navigation.home}</a>
+              <a href="#top">Home</a>
             </li>
             <li className="Header-li">
-              <a href="#projects">{navigation.projects}</a>
+              <a href="#projects">Proyectos</a>
             </li>
             <li className="Header-li">
-              <a href="#aboutMe">{navigation.aboutMe}</a>
+              <a href="#aboutMe">Sobre Mi</a>
             </li>
             <li className="Header-li">
               <a download={true} href={CV}>
-                {navigation.cv}
+                Curriculum
               </a>
             </li>
           </ul>
           <div className="Hero-actions">
-            <div className="flex gap-3">
-              <button
-                onClick={() => { dispacher('en') }}
-                className={`button lang${current === 'en' ? ' active' : ''}`}
-              >
-                en
-              </button>
-              <button
-                onClick={() => { dispacher('es') }}
-                className={`button lang${current === 'es' ? ' active' : ''}`}
-              >
-                es
-              </button>
-            </div>
+
             <a href="#talk" className="Header-button button-white">
-              {contact.title}
+              Contacto
             </a>
           </div>
         </nav>
