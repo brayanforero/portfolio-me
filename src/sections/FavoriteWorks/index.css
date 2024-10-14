@@ -1,7 +1,0 @@
-.FavoriteWorks {
-  @apply min-h-screen pt-16 mb-8 text-center lg:pt-24 lg:text-left;
-}
-
-.FavoriteWorks-h2 {
-  @apply mb-0 lg:mb-8 text-4xl lg:text-[4rem] xl:text-6xl;
-}

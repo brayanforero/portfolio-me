@@ -1,4 +1,0 @@
-.Imworking {
-  font-family: var(--title-font);
-  @apply relative flex items-center justify-center h-screen font-bold;
-}
